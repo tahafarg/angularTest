@@ -20,12 +20,21 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/js",
+              "src/assets/cdn.amcharts.com"
             ],
             "styles": [
+              "node_modules/bootstrap/scss/bootstrap.scss",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+          ]
+
+         
+          
+
           },
           "configurations": {
             "production": {
@@ -92,10 +101,16 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+            
+
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "367606e4-b325-4848-b74d-97b6758d4007"
   }
 }
